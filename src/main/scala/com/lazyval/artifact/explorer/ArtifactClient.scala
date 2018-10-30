@@ -4,7 +4,7 @@ import com.softwaremill.sttp._
 import org.json4s.{JValue}
 import org.json4s.native.JsonMethods
 
-object ArtifactClient{
+object ArtifactClient {
   def getJsonResponse(uri: Uri): JValue = {
     implicit val backend = HttpURLConnectionBackend()
 
